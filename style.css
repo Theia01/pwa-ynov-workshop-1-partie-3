@@ -1,0 +1,56 @@
+html, body{
+    padding: 0;
+    margin: 0;
+    background-color: #002233;
+    overflow: hidden;
+}
+
+.star{
+    border-radius: 5px;
+    height: 2px;
+    width: 2px;
+    position: absolute;
+    animation: star ease infinite;
+}
+
+#cactus-land img{
+    position: absolute;
+    animation: movecactus 30s linear infinite;
+    height: 70px;
+}
+
+.wave img {
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+}
+
+#desert1{
+    animation: movedesert1 20s linear infinite;
+}
+
+#desert2{
+    animation: movedesert2 20s linear infinite;
+}
+
+@keyframes movecactus {
+    0%   {left: calc(0vw - 80px);}
+    100% {left: calc(150vw - 80px);}
+}
+
+@keyframes movedesert1 {
+    0%   {left: 0vw;}
+    100% {left: 100vw;}
+}
+
+@keyframes movedesert2 {
+    0%   {left: calc(-100vw + 1px);}
+    100% {left: calc(0vw + 1px);}
+}
+
+@keyframes star {
+    0%   {background-color: rgba(1, 1, 1, 0);}
+    20%  {background-color: white;}
+    60%  {background-color: white;}
+    100% {background-color: rgba(1, 1, 1, 0);}
+}

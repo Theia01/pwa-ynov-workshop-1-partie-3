@@ -45,7 +45,7 @@ function createCactus(numberOfCactus, bigCactus = false){
     let cactus = document.createElement("img");
     let bottomCactus = Math.ceil(Math.random() * (40 - 3) + 3);
     cactus.setAttribute('alt', 'cactus');
-    cactus.setAttribute('src', 'cactus.png');
+    cactus.setAttribute('src', 'img/cactus.png');
 
     if(bigCactus){
         //creation GIGA cactus
